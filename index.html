@@ -9,30 +9,33 @@
     <title>Code quiz</title>
 </head>
 <body>
-    <container class="high scores">
-        
-    </container>
-    <container class="countdown timer">
-
-    </container>
-    <button class="start button">
-        <h3>Start</h3>
-    </button>
-    <container class="quiz box">
-        <container class="questions"></container>
-        <container class="answers"></container>
-        <container class="each answer"></container>
-    </container>
-    <container class="end screen">
-        <container class="you won vs you scored 0s"></container>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-        <label for="initials">Initials:</label>
-        <input type="text" id="initials" initials="initials"></label>
-        <button class="save button">
-            <h3>Save</h3>
-        </button>
-    </container>
+    <header>
+        <h1>Code quiz</h1>
+    </header>
+    <main>
+        <section class="quiz-section">
+            <div class="quiz-box">
+                <h2 class="question"></h2>
+                <ul class="anwer-list"></ul>
+            </div>
+            <div class="quiz-feedback"></div>
+            <button id="start-button">Start Quiz</button>
+        </section>
+        <section class="score-section hide">
+            <h2>Your Score:</h2>
+            <p id="score-display"></p>
+            <form>
+                <label for="initials">Enter Your Initials:</label>
+                <input type="text" name="initials" id="initials-input">
+                <button type="submit" id="save-score-button">Save Score</button>
+            </form>
+        </section>
+        <section class="high-scores-section hide">
+            <h2>High Scores</h2>
+            <ol id="high-scores-list"></ol>
+            <button id="clear-scores-button">Clear Scores</button>
+        </section>
+    </main>
     <script src="./assets/script.js"></script>
 </body>
 </html>
