@@ -10,12 +10,97 @@ body{
     background-position: center center;
     background-size: cover;
 }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.high-scores {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+}
 .button{
     background-color: plum;
     padding: 5px;
     border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
 }
 .button:hover{
     cursor: pointer;
     background-color: purple;
+}
+.quiz-box {
+    display: none;
+    margin-top: 20px;
+    max-width: 600px;
+    padding: 20px;
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+.questions {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.answers {
+    display: flex;
+    flex-wrap: wrap;
+}
+.each-answer {
+    flex-basis: 45%;
+    margin: 5px;
+    padding: 10px;
+    background-color: plum;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.each-answer:hover {
+    background-color: purple;
+}
+.end-screen {
+    display: none;
+    margin-top: 20px;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.you-won {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.save-button {
+    background-color: plum;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background-color: purple;
+}
+.label {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.score {
+    font-size: 20px;
+    margin-bottom: 20px;
 }
