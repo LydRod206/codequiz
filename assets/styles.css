@@ -10,28 +10,14 @@ body{
     background-position: center center;
     background-size: cover;
 }
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 .high-scores {
+
     position: absolute;
     top: 20px;
     right: 20px;
+    z-index: 1;
 
 }
-.button{
-    background-color: plum;
-    padding: 5px;
-    border-radius: 5px;
-    margin-top: 20px;
-    cursor: pointer;
-}
-.button:hover{
-    cursor: pointer;
-    background-color: purple;
 }
 .quiz-box {
     display: none;
@@ -76,7 +62,7 @@ body{
     margin-bottom: 20px;
 }
 
-.save-button {
+.save-button, .start-button, .clear-scores {
     background-color: plum;
     padding: 5px;
     border-radius: 5px;
@@ -84,7 +70,7 @@ body{
     cursor: pointer;
 }
 
-.save-button:hover {
+.save-button:hover, .start-button:hover, .clear-scores:hover {
     background-color: purple;
 }
 .label {
