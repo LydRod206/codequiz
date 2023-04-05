@@ -26,10 +26,10 @@ HTML
 CSS
 JavaScript
 Credits
-This code quiz application was created by [Your Name] as a simple project to practice JavaScript programming skills.
+This code quiz application was created by @LydRod206 as a simple project to practice JavaScript programming skills.
 
 License
 This project is open source and available under the MIT License.
 
 Contact
-For any questions, issues, or suggestions, please contact [Your Email Address]. Thank you!<|endoftext|>
+For any questions, issues, or suggestions, please contact annalydiar@gmail.com
