@@ -34,6 +34,7 @@ var questions = [
     "a, In the Head",
     "c, Cascading Style Sheets"
   ];
+
   // define variables
   var startButton = document.getElementById("start-button");
   var questionContainer = document.querySelector(".quiz-box"); 
@@ -50,12 +51,15 @@ var questions = [
   var timeLeft = 60;
   var timerInterval;
   var score = 0;
+
+
  // add event listeners
  startButton.addEventListener("click", startQuiz);
  answerList.addEventListener("click", handleAnswerSelection);
  saveScoreButton.addEventListener("click", saveScore);
  clearScoresButton.addEventListener("click", clearScores);
   
+
 // functions
 function startQuiz(){
     startButton.classList.add("hide");
@@ -68,6 +72,7 @@ function startQuiz(){
     startTimer();
     displayQuestion();
 }
+
 function startTimer(){
     timerInterval = setInterval(function () {
         timeLeft--;
@@ -76,6 +81,7 @@ function startTimer(){
         }
     }, 1000);
 }
+
 function displayQuestion(){
     var question = questions[currentQuestionIndex];
     questionElement.textContent = question.question;
